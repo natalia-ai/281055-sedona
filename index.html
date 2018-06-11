@@ -16,14 +16,15 @@
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Фото и видео</a></li>
                 <li><a href="#">Карта штата</a></li>
-                <li><a href="#">Гостиницы</a></li>
+                <li><a href="inner.html">Гостиницы</a></li>
             </ul>
         </nav>
     </header>
     <main class="container">
-        <h1>Sedona</h1>
         <section class="homepage-welcome">
-            <img class="welcome-sedona" src="img/sedona-view.jpg" width="1200" height="800" alt="Sedona-view">
+            <img class="homepage-w-gorgeous" src="img/to_the.png" width="175" height="30" alt="to the gorgeous">
+            <h1>Sedona</h1>
+            <img class="homepage-w-because" src="img/because.png" width="195" height="75" alt="because the grand lanyon sucks!">
         </section>
         <section class="homepage-teaser">
             <p class="homepage-t-definition">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -81,19 +82,36 @@
         <section class="homepage-booking">
             <p class="homepage-b-interested">Заинтересовались?</p>
             <p class="homepage-b-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <!--здесь будет форма-->
+            <form class="homepage-b-form" method="post" action="https://echo.htmlacademy.ru">
+                <div>
+                    <h2 class="homepage-b-form-head">Поиск гостиницы в Седоне</h2>
+                </div>
+                <label for="homepage-b-arrival">Дата заезда
+                    <input id="homepage-b-arrival" type="date" name="date">
+                </label>
+                <label for="homepage-b-leaving">Дата выезда
+                    <input id="homepage-b-leaving" type="date" name="date">
+                </label>
+                <label for="homepage-b-adult">Взрослые
+                    <!--чего здесь?-->
+                </label>
+                <label for="homepage-b-children">Дети
+                    <!--чего здесь?-->
+                </label>
+                <button type="submit" name="search">Найти</button>
+            </form>
         </section>
         <section class="map">
-            <img src="img/map.jpg" width="1720" height="750" alt="Карта гостиниц">
+            <img src="img/map.jpg" width="1720" height="750" alt="Адреса гостиниц в Седоне">
         </section>
     </main>
     <footer class="main-footer">
         <p class="footer-label">#VisitSedona</p>
         <div class="footer-social">
             <ul>
-                <li><a class="social-button" href="#">Вконтакте</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
+                <li><a class="social-button" href="https://twitter.com">Твиттер</a></li>
+                <li><a class="social-button" href="https://www.facebook.com">Фейсбук</a></li>
+                <li><a class="social-button" href="https://youtube.com">Ютьюб</a></li>
             </ul>
         </div>
         <p class="footer-copyright">Website by <a class="button" href="#">html<br>academy</a></p>

@@ -9,7 +9,7 @@
 <body>
     <header class="main-header">
         <nav class="main-nav">
-            <a href="main-page.html" class="logo">
+            <a href="index.html" class="logo">
                 <img class="logo" src="img/logo.png" width="136" height="70" alt="Sedona домашняя страница">
             </a>
             <ul class="site-navigation">
@@ -23,20 +23,67 @@
     <main class="container">
         <h1 class="visualy-hidden">Гостиницы</h1>
         <section class="filter-form">
-            <h2 class="filter-title">Инфраструктура</h2>
-            <ul class="filter-button">
-                <li>Бассейн</li>
-                <li>Парковка</li>
-                <li>WI-FI</li>
-            </ul>
-            <h2 class="filter-title">Тип жилья</h2>
-            <ul class="filter-button">
-                <li>Гостиница</li>
-                <li>Мотель</li>
-                <li>Апартаменты</li>
-            </ul>
-            <h2 class="filter-title">Стоимость в сутки (Р):</h2>
-            <!--здесь будет форма-->
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                <fieldset class="filter-infrastructure">
+                    <legend class="filter-title">Инфраструктура</legend>
+
+                    <!--<button><img src="checkbox-off.svg" alt="Пункт не выбран"></button>
+                    <button><img src="checkbox-on.svg" alt="Пункт выбран"></button> куда вставить и как?-->
+                    <ul class="filter-checkbox">
+                        <li>
+                            <input id="filter-pool" class="visualy-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" checked>
+                            <label for="filter-pool">Бассейн</label>
+                        </li>
+                        <li>
+                            <input id="filter-parking" class="visualy-hidden filter-input filter-input-checkbox" type="checkbox" name="parking">
+                            <label for="filter-parking">Парковка</label>
+                        </li>
+                        <li>
+                            <input id="filter-wi-fi" class="visualy-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi">
+                            <label for="filter-wi-fi">WI-FI</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="filter-type-housing">
+                    <legend class="filter-title">Тип жилья</legend>
+                    <ul class="filter-checkbox">
+                        <li>
+                            <input id="filter-guesthouse" class="visualy-hidden filter-input filter-input-checkbox" type="checkbox" name="guesthouse" checked>
+                            <label for="filter-guesthouse">Гостиница</label>
+                        </li>
+                        <li>
+                            <input id="filter-motel" class="visualy-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" checked>
+                            <label for="filter-motel">Мотель</label>
+                        </li>
+                        <li>
+                            <input id="filter-apartments" class="visualy-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" checked>
+                            <label for="filter-apartments">Апартаменты</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="filter-cost-day">
+                    <legend class="filter-title">Стоимость в сутки (Р):</legend>
+                    <label for="filter-cost-day-min"></label>
+                    <input id="filter-cost-day-min" type="search" name="filter-cost-day-min" value="от 0" min="0" max="6000">
+                    <label for="filter-cost-day-max"></label>
+                    <input id="filter-cost-day-max" type="search" name="filter-cost-day-max" value="до 3000" min="0" max="6000">
+                    <input type="range" name="filter-cost-day-min">
+                    <input type="range" name="filter-cost-day-max">
+
+                    <!--здесь <input type="range" name="filter-cost-day-min">
+                    <input type="range" name="filter-cost-day-max"> или
+
+                живая картинка, состоящая из двух 
+                    кружков-кнопок
+                    <button> <img src="filter-button.svg" alt="стоимость жилья в сутки,  минимальное предпочтительное значение"></button>
+             <button> <img src="filter-button.svg" alt="стоимость жилья в сутки,  максимальное предпочтительное значение"></button>
+                    , бегущих по палочке, и чудным образом связанная с <input type="search" name="filter-cost-day-min" value="от 0" min="0" max="6000">
+                    <input type="search" name="filter-cost-day-max" value="до 3000" min="0" max="6000">???-->
+
+                    <button class="filter-cost-day-button" type="submit">Показать</button>
+                    <!--здесь <button type="submit">Показать</button> или <input type="submit"???-->
+                </fieldset>
+            </form>
         </section>
         <section class="sorting-form">
             <header class="result-header">
@@ -49,6 +96,12 @@
                         <li><a href="#" class="type-page">По типу</a></li>
                         <li><a href="#" class="rating-page">По рейтингу</a></li>
                     </ul>
+                    <!--form class="result-dir" method="button" action="https://echo.htmlacademy.ru">
+                    <button class="result-up-dir"><img src="icon-up-dir.svg" alt="Показан результат поиска по цене от большего значения к меньшему">
+                    </button>
+                    <button class="result-down-dir"><img src="icon-down-dir.svg" alt="Показан результат поиска по цене от меньшего значения к большему">
+                    </button>
+                    </form>-->
                 </nav>
             </header>
             <main class="result-main">
@@ -59,7 +112,9 @@
                     <span class="hotel-floor-price">от 4000 р.</span>
                     <ul class="hotel-details-reserve">
                         <li><a class="hotel-details-button" href="#">Подробнее</a></li>
-                        <li><a class="hotel-reserve-button" href="#">Забронировать</a></li>
+                        <!--здесь переход на страницу фото и видео или остаемся на этой странице??-->
+                        <li><button class="hotel-reserve" type="submit">Забронировать</button></li>
+                        <!--здесь <button type="submit">Забронировать</button> или <input type="submit"???-->
                     </ul>
                     <span class="hotel-star">4 звезды</span>
                     <p class="hotel-rating">Рейтинг:8.5</p>
@@ -71,7 +126,7 @@
                     <span class="hotel-floor-price">от 3000 р.</span>
                     <ul class="hotel-details-reserve">
                         <li><a class="hotel-details-button" href="#">Подробнее</a></li>
-                        <li><a class="hotel-reserve-button" href="#">Забронировать</a></li>
+                        <li><button class="hotel-reserve" type="submit">Забронировать</button></li>
                     </ul>
                     <span class="hotel-star">3 звезды</span>
                     <p class="hotel-rating">Рейтинг:8.9</p>
@@ -83,7 +138,7 @@
                     <span class="hotel-floor-price">от 2000 р.</span>
                     <ul class="hotel-details-reserve">
                         <li><a class="hotel-details-button" href="#">Подробнее</a></li>
-                        <li><a class="hotel-reserve-button" href="#">Забронировать</a></li>
+                        <li><button class="hotel-reserve" type="submit">Забронировать</button></li>
                     </ul>
                     <span class="hotel-star">2 звезды</span>
                     <p class="hotel-rating">Рейтинг:9.2</p>
@@ -95,14 +150,14 @@
         <p class="footer-label">#VisitSedona</p>
         <div class="footer-social">
             <ul>
-                <li><a class="social-button" href="#">Вконтакте</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
+                <li><a class="social-button" href="https://twitter.com">Твиттер</a></li>
+                <li><a class="social-button" href="https://www.facebook.com">Фейсбук</a></li>
+                <li><a class="social-button" href="https://youtube.com">Ютьюб</a></li>
             </ul>
         </div>
         <p class="footer-copyright">
             Website by
-            <a class="button" href="#">html<br>
+            <a class="button" href="https://htmlacademy.ru/">html<br>
                     academy</a>
         </p>
     </footer>
