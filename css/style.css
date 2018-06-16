@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #333333;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.site-navigation,
+.homepage-booking-form-control,
+.homepage-booking-form-control input[type="text"] {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.homepage-details-title h3,
+.homepage-teaser-title h2,
+.homepage-booking-title h2,
+.result-title,
+.hotel-title,
+.sorting-title,
+.footer-label,
+.footer-copyright {
+    color: #000000;
+}
+
+.site-navigation,
+.filter-checkbox,
+.filter-cost-day-block,
+.filter-cost-day-block input,
+.filter-cost-day-btn,
+.result-header-sort-list,
+.result-header-sorting,
+.footer-social-btn {
+    list-style: none;
+}
+
+.site-navigation .current-page {
+    color: #ada19a;
+}
+
+.site-navigation a {
+    color: #000000;
+}
+
+.current-page a {
+    color: #ada19a;
+}
+
+.site-navigation a:link,
+a:link .hotel-title {
+    color: #000000;
+}
+
+.site-navigation a:hover,
+a:hover .hotel-title {
+    color: #81b3b2;
+}
+
+.site-navigation a:active,
+a:active .hotel-title {
+    color: #b2b2b2;
+}
+
+.container {
+    background-image: url("img/sedona-view.png");
+    background-image: url("img/sedona-fon.png");
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.homepage-teaser,
+.homepage-booking,
+.homepage-feature-list-text,
+.homepage-details-bonus,
+.homepage-feature-item {
+    text-align: center;
+}
+
+.homepage-teaser-title h2 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.homepage-feature-list-title h3,
+.homepage-details-title h3 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.homepage-feature-list-text {
+    color: #ffffff;
+    background-color: #81b3b2;
+}
+
+.homepage-feature-list-point,
+.homepage-feature-list-descr,
+.homepage-details-descr {
+    font: inherit;
+    line-height: 21px;
+}
+
+.homepage-feature-item {
+    background-color: #eeeeee;
+}
+
+.homepage-booking-title h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.homepage-booking-descr {
+    font: inherit;
+}
+
+.homepage-booking-form-control,
+.homepage-booking-form-control input[type="text"] {
+    border: none;
+}
+
+.homepage-booking-form-control input:link {
+    color: #000000;
+    background-color: #f2f2f2;
+}
+
+.homepage-booking-form-control input:hover {
+    color: #000000;
+    background-color: #ebebeb;
+}
+
+.homepage-booking-form-control input:focus {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.homepage-booking-btn,
+.homepage-booking-form-btn,
+.result-title,
+.hotel-title,
+.footer-label {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.homepage-booking-form-btn {
+    font: inherit;
+    border: none;
+}
+
+.homepage-booking-form-btn:link,
+.hotel-details-reserve .hotel-details-btn:link,
+.footer-social-btn a:link {
+    color: #ffffff;
+    background-color: #81b3b2;
+}
+
+.homepage-booking-form-btn:hover,
+.hotel-details-reserve .hotel-details-btn:hover,
+.footer-social-btn a:hover {
+    color: #ffffff;
+    background-color: #669ec0;
+}
+
+.homepage-booking-form-btn:active,
+.hotel-details-reserve .hotel-details-btn:active,
+.footer-social-btn a:active {
+    color: #87b6d1;
+    background-color: #6496bd;
+}
+
+.homepage-booking-button a:link,
+.hotel-details-reserve .hotel-details-btn-grey:link {
+    color: #ffffff;
+    background-color: #766357;
+}
+
+.homepage-booking-button a:hover,
+.hotel-details-reserve .hotel-details-btn-grey:hover {
+    color: #ffffff;
+    background-color: #604e43;
+}
+
+.homepage-booking-button a:active,
+.hotel-details-reserve .hotel-details-btn-grey:active {
+    color: #847870;
+    background-color: #503e33;
+}
+
+.filter-form {
+    background-color: burlywood;
+    background-image: url("img/background-photo.png");
+    background-repeat: no-repeat;
+}
+
+.filter-title {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.filter-checkbox,
+.filter-cost-day-block,
+.filter-cost-day-block input,
+.filter-cost-day-btn,
+.hotel-type,
+.hotel-floor-price,
+.hotel-raiting-text {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.filter-title,
+.filter-checkbox,
+.filter-cost-day-block,
+.filter-cost-day-block input,
+.filter-cost-day-btn {
+    color: #ffffff;
+}
+
+.hotel-details-reserve {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.homepage-booking-form-btn,
+.hotel-details-reserve .hotel-details-btn {
+    color: #ffffff;
+    background-color: #81b3b2;
+}
+
+.hotel-details-reserve .hotel-details-btn-grey {
+    color: #ffffff;
+    background-color: #766357;
+}
+
+.hotel-raiting-text {
+    color: #666666;
+    background-color: #f2f2f2;
+}
+
+.sorting-title,
+.result-header-sort-list {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.result-header-sort-list a:link {
+    color: #d0d0d0;
+}
+
+.result-header-sort-list a:hover {
+    color: #81b3b2;
+}
+
+.result-header-sort-list a:active {
+    color: #000000;
+}
+
+.result-header-sort-list a {
+    color: #d0d0d0;
+}
+
+.active a {
+    color: #81b3b2;
+}
