@@ -8,6 +8,7 @@ body {
     color: #333333;
     text-transform: uppercase;
     background-color: #f2f2f2;
+    min-width: 1280px;
 }
 
 a {
@@ -26,11 +27,28 @@ img {
     box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 138px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+}
+
 .site-navigation {
+    width: 1200px;
+    margin: 0;
+    padding: 0px;
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .site-navigation .current-page {
@@ -52,12 +70,22 @@ img {
     color: #000000;
 }
 
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 .homepage-welcome {
+    width: 1200px;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
     text-align: center;
     background: url("../img/sedona-view.jpg") no-repeat;
     background-size: cover;
-    padding-top: 100px;
-    padding-bottom: 100px;
     position: relative;
 }
 
@@ -72,104 +100,229 @@ img {
     left: 0;
 }
 
-.homepage-teaser,
-.homepage-booking,
-.homepage-feature-list-text,
-.homepage-details-bonus,
-.homepage-feature-item,
-homepage-booking-form-number {
+.homepage-teaser {
+    width: 1200px;
+    margin: 0;
+    padding: 0;
+    padding-top: 61px;
+    padding-bottom: 56px;
     text-align: center;
 }
 
 .homepage-teaser-title {
+    margin-top: 0;
+    margin-right: 370px;
+    margin-bottom: 38px;
+    margin-left: 370px;
+    padding: 0;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
     color: #000000;
 }
 
+.homepage-teaser-descr {
+    margin: 0;
+    padding: 0;
+}
+
+.homepage-features {
+    display: flex;
+    flex-direction: column;
+}
+
+.homepage-feature-list {
+    display: flex;
+    width: 1200px;
+    height: 256px;
+    margin: 0;
+    padding: 0px;
+}
+
 .homepage-feature-list-text {
+    width: 400px;
+    margin: 0;
+    padding-top: 46px;
+    padding-right: auto;
+    padding-bottom: 0;
+    padding-left: auto;
+    text-align: center;
     color: #ffffff;
     background-color: #81b3b2;
 }
 
-.homepage-feature-list-title,
-.homepage-details-title {
+.homepage-feature-list-title {
+    margin-top: 0;
+    margin-right: 90px;
+    margin-bottom: 25px;
+    margin-left: 90px;
+    padding: 0;
+    text-align: center;
     font-size: 21px;
     line-height: 21px;
     font-weight: 700;
 }
 
-.homepage-feature-list-point,
-.homepage-feature-list-descr,
-.homepage-details-descr {
+.homepage-feature-list-point {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
     font: inherit;
     line-height: 21px;
 }
 
-.homepage-details-title,
-.footer-label,
-.footer-copyright {
+.homepage-feature-list-descr {
+    margin-top: 25px;
+    margin-right: 45px;
+    margin-bottom: auto;
+    margin-left: 45px;
+    padding: 0;
+    font: inherit;
+    line-height: 21px;
+}
+
+.homepage-feature-list-img {
+    width: 800px;
+}
+
+.homepage-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1200px;
+    margin: 0;
+    margin-top: 57px;
+    margin-bottom: 85px;
+}
+
+.homepage-details-bonus {
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.homepage-details-bonus-house {
+    background: url("../img/house.svg") no-repeat;
+    background-size: auto;
+}
+
+.homepage-details-bonus-food {
+    background: url("../img/food.svg") no-repeat;
+    background-size: auto;
+}
+
+.homepage-details-bonus-souvenirs {
+    background: url("../img/souvenirs.svg") no-repeat;
+    background-size: auto;
+}
+
+.homepage-details-title {
+    margin: 0;
+    margin-top: 85px;
+    margin-bottom: 30px;
+    padding: 0;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
     color: #000000;
 }
 
+.homepage-details-descr {
+    font: inherit;
+    line-height: 21px;
+    margin: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0;
+    text-align: center;
+}
+
+.homepage-feature-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0;
+    margin-bottom: 57px;
+}
+
 .homepage-feature-item {
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 64px;
+    text-align: center;
     background-color: #eeeeee;
 }
 
+.homepage-feature-title {
+    margin-top: 0;
+    margin-right: 140px;
+    margin-bottom: 25px;
+    margin-left: 140px;
+    padding: 0;
+    text-align: center;
+}
+
+.homepage-feature-point {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    font: inherit;
+    line-height: 21px;
+}
+
+.homepage-feature-descr {
+    margin-top: 25px;
+    margin-right: 70px;
+    margin-bottom: auto;
+    margin-left: 70px;
+    padding: 0;
+    text-align: center;
+}
+
+.homepage-booking {
+    width: 568px;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    text-align: center;
+}
+
 .homepage-booking-title {
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     color: #000000;
 }
 
-.homepage-booking-form-control,
-.homepage-booking-form-control input[type="text"] {
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 700;
-    border: none;
+.homepage-booking-descr {
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    font: inherit;
 }
 
-.homepage-booking-form-control input[type="text"] {
-    text-align: center;
-}
-
-::-webkit-input-placeholder {
-    color: #000000;
-}
-
-:-moz-placeholder {
-    color: #000000;
-}
-
-::-moz-placeholder {
-    color: #000000;
-}
-
-:-ms-input-placeholder {
-    color: #000000;
-}
-
-.homepage-booking-form-control input {
-    background-color: #f2f2f2;
-}
-
-.homepage-booking-form-control input:hover {
-    background-color: #ebebeb;
-}
-
-.homepage-booking-form-control input:focus {
-    background-color: #ffffff;
-}
-
-.homepage-booking-btn,
-.homepage-booking-form-btn {
+.homepage-booking-btn {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
     border: none;
+}
+
+.homepage-booking-button .homepage-booking-btn {
+    width: 568px;
+    margin: 0;
+    padding-top: 35px;
+    padding-right: 135px;
+    padding-bottom: 33px;
+    padding-left: 135px;
 }
 
 .homepage-booking-button .homepage-booking-btn,
@@ -188,6 +341,104 @@ homepage-booking-form-number {
 .hotel-details-reserve .hotel-details-btn-grey:active {
     color: #847870;
     background-color: #503e33;
+}
+
+.homepage-booking-form {
+    width: 568px;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+.homepage-booking-form-control {
+    margin: 0;
+    padding: 55px;
+    padding-bottom: 0;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    border: none;
+}
+
+.homepage-booking-form-control input[type="text"] {
+    margin: 0;
+    margin-left: 20px;
+    padding: 13px;
+    padding-right: auto;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: left;
+    border: none;
+}
+
+ ::-webkit-input-placeholder {
+    color: #000000;
+}
+
+ :-moz-placeholder {
+    color: #000000;
+}
+
+ ::-moz-placeholder {
+    color: #000000;
+}
+
+ :-ms-input-placeholder {
+    color: #000000;
+}
+
+.homepage-booking-form-control input {
+    background-color: #f2f2f2;
+}
+
+.homepage-booking-form-control input:hover {
+    background-color: #ebebeb;
+}
+
+.homepage-booking-form-control input:focus {
+    background-color: #ffffff;
+}
+
+.homepage-booking-form-number input[type="text"] {
+    text-align: center;
+}
+
+.homepage-booking-calend {
+    width: 21px;
+    height: 22px;
+    margin-top: 8px;
+    margin-right: 9px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    font-size: 0;
+    background: url("../img/calendar.svg") no-repeat;
+    background-size: auto;
+    border: none;
+}
+
+.homepage-booking-form-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.homepage-booking-form-number {
+    align-self: center;
+}
+
+.homepage-booking-form-btn {
+    width: 458px;
+    margin: 55px;
+    padding: 0;
+    padding-top: 17px;
+    padding-bottom: 22px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
 }
 
 .homepage-booking-form-btn,
@@ -211,12 +462,54 @@ homepage-booking-form-number {
     background-color: #6496bd;
 }
 
+.main-footer {
+    margin: 0;
+    padding-top: 36px;
+    padding-right: 100px;
+    padding-bottom: 36px;
+    padding-left: 130px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-label {
+    width: 136px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.footer-social {
+    width: 150px;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-social-btn {
+    list-style: none;
+}
+
+.footer-copyright {
+    width: 197px;
+    color: #000000;
+}
+
 .filter-form {
+    margin: 0;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-right: 74px;
+    padding-bottom: 30px;
+    padding-left: 72px;
     text-align: center;
     background: url("../img/sedona-view.png") no-repeat;
     background-size: cover;
-    padding-top: 50px;
-    padding-bottom: 50px;
     position: relative;
 }
 
@@ -243,21 +536,83 @@ homepage-booking-form-number {
     background-color: #ffffff;
 }
 
+.sorting-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-right: 70px;
+    padding-left: 70px;
+    background-color: #fefefe;
+}
+
+.result-title {
+    width: 120px;
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.result-header-sort {
+    width: 815px;
+    margin: 0;
+    padding: 0;
+}
+
+.sorting-title {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.result-header-sort-list {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+    list-style: none;
+}
+
+.result-main {}
+
+.hotel {
+    display: flex;
+    margin: 0;
+    padding-top: 30px;
+    padding-right: 72px;
+    padding-bottom: 30px;
+    padding-left: 73px;
+}
+
+.hotel-img {
+    margin: 0;
+    margin-right: 30px;
+    padding: 0;
+}
+
+.hotel-info {
+    width: 290px;
+    margin: 0;
+    padding: 0;
+}
+
+.hotel-title {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+}
+
 .hotel-type,
 .hotel-floor-price {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
     color: inherit;
-}
-
-.result-title,
-.hotel-title,
-.footer-label {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
-    color: #000000;
 }
 
 .hotel-details-reserve {
@@ -278,23 +633,14 @@ homepage-booking-form-number {
     background-color: #f2f2f2;
 }
 
-.sorting-form,
-.result-main,
-.main-footer {
-    background-color: #fefefe;
+.hotel-raiting {
+    width: 120px;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
 }
 
-.sorting-title,
-.result-header-sort-list {
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #000000;
-}
-
-.result-header-sort-list,
-.result-header-sorting,
-.footer-social-btn {
+.result-header-sorting {
     list-style: none;
 }
 
