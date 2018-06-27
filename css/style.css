@@ -1,7 +1,7 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: "PT Sans", Arial, sans-serif;
+            font-family: "PT Sans", "Arial", sans-serif;
             font-size: 14px;
             line-height: 26px;
             font-weight: 400;
@@ -420,9 +420,9 @@
         }
         
         .homepage-booking-button {
-            width: 572px;
+            width: 575px;
             margin: 0;
-            margin-left: 5px;
+            margin-left: 3px;
         }
         
         .homepage-booking-btn {
@@ -433,10 +433,10 @@
         }
         
         .homepage-booking-button .homepage-booking-btn {
-            width: 572px;
+            width: 575px;
             margin: 0;
             padding-top: 30px;
-            padding-right: 140px;
+            padding-right: 138px;
             padding-bottom: 30px;
             padding-left: 138px;
             color: #ffffff;
@@ -502,6 +502,7 @@
             text-align: left;
             text-transform: uppercase;
             border: none;
+            background-color: #f2f2f2;
         }
         
          ::-webkit-input-placeholder {
@@ -520,17 +521,14 @@
             color: #000000;
         }
         
-        .homepage-booking-form-control input {
-            background-color: #f2f2f2;
-        }
-        
-        .homepage-booking-form-control input:hover {
+        .form-control-arrival input:hover,
+        .form-control-living input:hover {
             background-color: #ebebeb;
         }
         
-        .homepage-booking-form-control input:focus {
+        .form-control-arrival input:focus,
+        .form-control-living input:focus {
             background-color: #ffffff;
-            border: none;
         }
         
         .homepage-booking-calend {
