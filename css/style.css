@@ -117,7 +117,7 @@ img {
 }
 
 .homepage-welcome {
-    width: 1200px;
+    display: block;
     height: 510px;
     margin: 0;
     padding: 0;
@@ -257,8 +257,8 @@ img {
 }
 
 .homepage-feature-list-img {
+    display: block;
     width: 800px;
-    height: 256px;
 }
 
 .homepage-details {
@@ -622,6 +622,8 @@ img {
 .plus {
     width: 38px;
     height: 38px;
+    padding: 0;
+    text-indent: -9999px;
     border: none;
     background-color: #f2f2f2;
     position: relative;
@@ -692,10 +694,8 @@ img {
 }
 
 .map {
-    width: 1200px;
-    height: 470px;
+    display: block;
     margin: 0;
-    margin-bottom: 12px;
     box-sizing: border-box;
     background-color: #cbdea7;
 }
@@ -788,9 +788,7 @@ img {
 }
 
 .filter-form {
-    width: 1200px;
-    height: 217px;
-    box-sizing: border-box;
+    display: block;
     margin: 0;
     margin-bottom: 40px;
     padding-top: 27px;
@@ -893,7 +891,7 @@ img {
     box-shadow: 5px 5px 5px -3px transparent;
 }
 
-.filter-checkbox label:disabled::before {
+.filter-checkbox input[type="checkbox"]:disabled~label::before {
     border: 2px solid #5e6060;
     border-radius: 2px;
 }
@@ -1054,7 +1052,6 @@ img {
     padding: 0;
     padding-right: 70px;
     padding-left: 72px;
-    background-color: #fefefe;
     position: relative;
 }
 
@@ -1138,6 +1135,8 @@ img {
     margin-right: 3px;
     margin-left: 9px;
     vertical-align: top;
+    text-indent: -9999px;
+    border: none;
     background: url("../img/arrow-up-quiet.svg") no-repeat;
 }
 
