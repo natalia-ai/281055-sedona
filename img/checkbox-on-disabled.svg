@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 23" width="27" height="23">
+	<defs>
+		<image width="27" height="23" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAXCAMAAADNyMQcAAAATlBMVEVpaWlpaWlpaWlpaWlpaWlpaWkAAABpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWnAISkBAAAAGnRSTlMKnff/9joAeBV5AU0QD9OXDke+/VtQad/SBtInLw0AAACYSURBVHicddJREsIgDATQwGpEWlutinr/iwoN0BpwP/NmkswkRMZC53DkFDKNACd2Zx/NYhhVLuwmzJ4JGFknEiL2bCVM145lcp2elYrRraVstNwfDYnRAgjuSeyZCgkrhWocBDfCZhlfpSH2Jlhn/VpBWUOZYN5QW8JMrXF4Z+oYf/i/sbJ4d69pgF2t9y+AWa33Z9ZQsi/esg85xFlQVgAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="checkbox-on копия 2" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>
