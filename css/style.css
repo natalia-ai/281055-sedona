@@ -978,6 +978,28 @@ img {
     background: url("../img/checkbox-on-disabled.svg") no-repeat;
 }
 
+.filter-checkbox input[type="checkbox"]:focus~label::after {
+    content: "";
+    width: 23px;
+    height: 23px;
+    margin: 0;
+    outline: auto;
+    position: absolute;
+    top: -3px;
+    left: -40px;
+}
+
+.filter-checkbox input[type="checkbox"]:focus:checked~label::after {
+    content: "";
+    width: 27px;
+    height: 23px;
+    margin: 0;
+    outline: auto;
+    position: absolute;
+    top: -3px;
+    left: -40px;
+}
+
 .filter-type-housing {
     width: 400px;
     margin: 0;
