@@ -1268,19 +1268,16 @@ img {
     background: url("../img/arrow-up-active.svg") no-repeat;
 }
 
-.arrow-down,
-.arrow-down:hover,
-.arrow-down:active {
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
+.arrow-down {
+    background: url("../img/arrow-down-quiet.svg") no-repeat;
+}
+
+.arrow-down:hover {
+    background: url("../img/arrow-down-hover.svg") no-repeat;
 }
 
 .arrow-down-active {
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
-    background: url("../img/arrow-up-active.svg") no-repeat;
+    background: url("../img/arrow-down-active.svg") no-repeat;
 }
 
 .arrow span {
