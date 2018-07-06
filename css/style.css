@@ -650,7 +650,6 @@ img {
     -ms-flex-pack: center;
     justify-content: center;
     margin: 0;
-    margin-right: auto;
     margin-bottom: 55px;
 }
 
@@ -659,7 +658,7 @@ img {
 }
 
 .homepage-booking-form-number:last-of-type {
-    margin-left: 120px;
+    margin-right: -50px;
 }
 
 .homepage-booking-form-number input[type="text"] {
