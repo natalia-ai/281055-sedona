@@ -170,9 +170,9 @@ img {
 
 .homepage-teaser-title {
     margin-top: 0;
-    margin-right: 292px;
+    margin-right: 235px;
     margin-bottom: 28px;
-    margin-left: 292px;
+    margin-left: 235px;
     padding: 0;
     font-size: 21px;
     line-height: 26px;
@@ -516,10 +516,8 @@ img {
     box-sizing: border-box;
     margin: 0;
     margin-left: -284px;
-    padding: 50px;
     padding-top: 25px;
     padding-bottom: 55px;
-    padding-left: 8px;
     background: #ffffff;
     -webkit-box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
     box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
@@ -528,6 +526,8 @@ img {
 }
 
 .homepage-booking-form-control {
+    display: inline-block;
+    width: 500px;
     margin: 0;
     padding: 0;
     padding-top: 30px;
@@ -536,21 +536,25 @@ img {
     font-weight: 700;
     text-align: right;
     border: none;
+    vertical-align: top;
     position: relative;
 }
 
-.label-form-control {
-    position: absolute;
-    top: 36px;
-    left: 48px;
+.homepage-booking-form-control label {
+    display: inline-block;
+    width: 100px;
+    margin: 0;
+    margin-right: 15px;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
 }
 
 .homepage-booking-form-control input[type="text"] {
-    width: 335px;
+    width: 332px;
     height: 38px;
     margin: 0;
-    margin-top: 0px;
-    margin-right: 4px;
+    margin-right: 22px;
     padding: 0;
     padding-left: 12px;
     font-size: 14px;
@@ -586,8 +590,9 @@ img {
     outline: none;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
-    padding: 4px;
+    padding: -7px;
     padding-left: 10px;
+    line-height: 30px;
 }
 
 .homepage-booking-calend {
@@ -600,7 +605,7 @@ img {
     border: none;
     position: absolute;
     top: 38px;
-    right: 13px;
+    right: 28px;
 }
 
 .homepage-booking-calend:hover {
@@ -612,11 +617,6 @@ img {
     outline: none;
 }
 
-.homepage-booking-form-grid {
-    width: 445px;
-    margin-left: 10px;
-}
-
 .homepage-booking-form-grid .homepage-booking-form-control {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -626,16 +626,8 @@ img {
     justify-content: space-between;
 }
 
-.label-booking-form:first-of-type {
-    position: absolute;
-    top: 35px;
-    left: 37px;
-}
-
-.label-booking-form:last-of-type {
-    position: absolute;
-    top: 35px;
-    left: 317px;
+.homepage-booking-form-grid label {
+    margin-left: 55px;
 }
 
 .homepage-booking-form-number {
@@ -650,15 +642,15 @@ img {
     -ms-flex-pack: center;
     justify-content: center;
     margin: 0;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
 }
 
 .homepage-booking-form-number:first-of-type {
-    margin-left: 148px;
+    margin-left: 25px;
 }
 
 .homepage-booking-form-number:last-of-type {
-    margin-right: -50px;
+    margin-left: 10px;
 }
 
 .homepage-booking-form-number input[type="text"] {
@@ -728,8 +720,7 @@ img {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
     margin: 0;
-    margin-top: -2px;
-    margin-left: 40px;
+    margin-top: 3px;
     padding: 0;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -881,7 +872,7 @@ img {
 .filter-form {
     display: block;
     margin: 0;
-    margin-bottom: 38px;
+    margin-bottom: 30px;
     padding-top: 27px;
     padding-bottom: 23px;
     padding-left: 68px;
@@ -1165,6 +1156,7 @@ img {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin: 0;
+    margin-bottom: 6px;
     padding: 0;
     padding-right: 70px;
     padding-left: 72px;
@@ -1177,7 +1169,7 @@ img {
     height: 1px;
     background-color: #e5e5e5;
     position: absolute;
-    top: 48px;
+    top: 57px;
     left: 0px;
 }
 
@@ -1185,7 +1177,6 @@ img {
     display: block;
     width: 150px;
     margin: 0;
-    margin-top: -8px;
     padding: 0;
     font-size: 21px;
     line-height: 26px;
@@ -1202,14 +1193,14 @@ img {
     justify-content: space-between;
     width: 910px;
     margin: 0;
-    margin-bottom: 5px;
+    margin-top: 6px;
     padding: 0;
 }
 
 .sorting-title {
     margin: 0;
-    margin-left: 15px;
     margin-right: 10px;
+    margin-left: 15px;
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
