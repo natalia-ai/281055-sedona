@@ -2311,16 +2311,21 @@ img {
 }
 
 .map {
-    display: block;
     margin: 0;
-    margin-bottom: 8px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     background-color: #cbdea7;
+}
+
+.map iframe {
+    display: block;
+    width: 100%;
+    height: 475px;
+    border: none;
+    z-index: 2;
 }
 
 .map img {
     display: block;
+    z-index: 0;
 }
 
 .main-footer {
